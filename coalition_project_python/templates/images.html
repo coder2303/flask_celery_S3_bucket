@@ -1,0 +1,25 @@
+<html lang = "en">
+   <head></head>
+   <body>
+      <table>
+         <thead>
+            <tr>
+               <th>Id</th>
+               <th>Image_Name</th>
+               <th>Size</th>
+            </tr>
+         </thead>
+         
+         <tbody>
+            {% for images in image %}
+               <tr>
+                <td>{{ images.id }}</td>
+                  <td>{{ images.img_name }}</td>
+                  <td>{{ images.size }}</td>
+               </tr>
+            {% endfor %}
+         </tbody>
+      </table>
+      
+   </body>
+</html>
