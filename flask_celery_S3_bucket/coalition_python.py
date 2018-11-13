@@ -35,7 +35,6 @@ db.create_all()    # create the database
 
 
 
-
 @app.route('/') # use to show all the images store in the image DB
 def show_all():
    return render_template('images.html', image = image.query.all() )
